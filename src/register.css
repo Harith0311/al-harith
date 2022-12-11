@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,200;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+header img {
+  width: 350px;
+  height: 50px;
+  margin: 5px;
+  margin-left: 160px;
+}
+
+.search-bar {
+  background-color: aliceblue;
+  width: 450px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.search-bar h4 {
+  margin: 5px;
+  font-weight: 450;
+  color: rgb(98, 98, 98);
+}
+
+.search-bar h4 #search {
+  margin: 5px;
+  font-weight: 450;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px 15px;
+  margin-right: 35px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+  display: flex;
+  padding: 2px;
+  justify-content: flex-end;
+}
+
+li a {
+  display: inline;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 2px;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+}
+
+li a:hover {
+  display: inline;
+  color: #0ddabe;
+  text-align: center;
+  margin: 2px;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+}
+
+li .cart {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: none;
+  border-color: rgb(255, 255, 255);
+}
+
+li .cart span{
+  color: #0ddabe;
+}
+
+li .cart:hover {
+  color: #0ddabe;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #0ddabe;
+  border-radius: none;
+}
+
+.navbar {
+  background-color: rgb(13, 218, 190);
+  margin-top: -15px;
+}
+
+li .menu {
+  color: rgb(0, 0, 0);
+  background-color: rgb(13, 218, 190);
+  font-weight: 650;
+}
+
+ul.nama {
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Registration Form */
+
+.reg-form {
+  background-color: rgb(242, 241, 241);
+  margin: 40px 380px;
+  height: 72vh;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgba(76, 76, 76, 0.559);
+  border-radius: 5px;
+}
+
+form h2 {
+  margin-left: 32px;
+}
+
+.line {
+  width: 55vw;
+  margin: 34px;
+  color: rgb(13, 218, 190);
+}
+
+.row {
+  display: block;
+  margin: 10px 80px;
+}
+
+/* Capslock warning */
+.row p{
+  display: none;
+  font-size: 14px;
+  margin-left: 310px;
+}
+
+.row p span{
+  color: red;
+}
+
+p {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: 500;
+}
+
+input {
+  background-color: #ffffff;
+  float: right;
+  width: 650px;
+  padding: 12px 10px;
+  margin-right: 5px;
+}
+
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  margin: 40px 250px;
+  padding: 15px 250px;
+  background-color: rgb(13, 218, 190);
+}
+
+button:hover {
+  color: rgb(13, 218, 190);
+  transition: 0.3s;
+  background-color: black;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #eddddd;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 50px;
+  
+}
+
+#message p {
+  padding: 2px 5px;
+  font-size: 15px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+/* Footer */
+.footer {
+  height: 450px;
+  background-color: black;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 10px;
+}
+
+.footer-logo img {
+  width: 550px;
+  height: 80px;
+}
+
+.f-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 290px;
+}
+
+.about-us {
+  color: white;
+  width: 20vw;
+  height: 170px;
+  padding: 10px 15px;
+}
+
+.help {
+  color: white;
+  width: 20vw;
+  height: 170px;
+  padding: 10px 15px;
+}
+
+.faq {
+  color: white;
+  width: 20vw;
+  height: 170px;
+  padding: 10px 15px;
+}
+
+.social {
+  font-size: 34px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+  margin: 15px 850px;
+  margin-top: 38px;
+}
+
+.social a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.social a:hover {
+  color: rgb(13, 218, 190);
+  transition: 0.3s;
+}
+
+.f-content h2 {
+  color: rgb(13, 218, 190);
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.f-content h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  color: white;
+  background-color: rgb(38, 38, 38);
+}
+
+.copyright h5 {
+  font-size: 16px;
+  margin: 5px 0px;
+  font-weight: 430;
+}

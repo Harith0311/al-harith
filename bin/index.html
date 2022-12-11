@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../src/index.css">
+    <link rel="shortcut icon" href="../img/small-logo.jpg" type="image/x-icon">
+    <title>Al-harith</title>
+</head>
+<body>
+
+<!--Navbar and Header-->
+    <header>
+        <img src="../img/logo-main.jpg" alt="al ikhsan">
+        <div class="search-bar">
+            <h4>Search</h4>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul>
+            <li><a href="#" class="cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i>&nbsp; Cart</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-user-plus"></i>&nbsp; Register</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>&nbsp; Login</a></li>
+        </ul>
+        
+    </header>
+    <div class="navbar">
+            <ul class="nama">
+                <li><a href="category.html" class="menu">Adidas</a></li>
+                <li><a href="category.html" class="menu">Nike</a></li>
+                <li><a href="category.html" class="menu">Asics</a></li>
+                <li><a href="category.html" class="menu">Skechers</a></li>
+                <li><a href="category.html" class="menu">Puma</a></li>
+                <li><a href="category.html" class="menu">New Balance</a></li>
+            </ul> 
+    </div>
+
+<!--Slideshow-->
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/img/rihla.png" style="width:100%">
+          <div class="text">Al-Rihla ball</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="/img/kits.png" style="width:100%">
+          <div class="text">New Season Kit</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="/img/shoes.gif" style="width:100%">
+          <div class="text">Shoes Sale</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+<!--Categories-->
+
+          <section>
+          <div class="brand">
+            <div class="category">
+              <div class="box">
+                <div class="adidas">
+                  <img src="/img/adidas.png" alt="">
+                  <a href="category.html">Browse</a>
+                </div>
+              </div>
+              <div class="box">
+                <div class="nike">
+                  <img src="/img/nike.png" alt="">
+                  <a href="category.html">Browse</a>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div class="box">
+                <div class="asics">
+                  <img src="/img/asics.png" alt="">
+                  <a href="category.html">Browse</a>
+                </div>
+              </div>
+              <div class="box">
+                <div class="skechers">
+                  <img src="/img/skechers.png" alt="">
+                  <a href="category.html">Browse</a>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div class="box">
+                <div class="puma">
+                  <img src="/img/puma.png" alt="">
+                  <a href="category.html">Browse</a>
+                </div>
+              </div>
+              <div class="box">
+                <div class="nb">
+                  <img src="/img/new-balance.png" alt="">
+                  <a href="category.html">Browse</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          
+<!--Footer-->
+        
+        <div class="footer">
+          <div class="footer-logo">
+            <img src="../img/logo-main.jpg" alt="al harith">
+          </div>
+          <div class="f-content">
+            <div class="about-us">
+              <h2>ABOUT US</h2>
+              <h4>Harith Ismail</h4>
+              <h4>AI200184</h4>
+              <h4>Web Development</h4>
+            </div>
+            <div class="help">
+              <h2>HELP & SUPPORT</h2>
+              <h4>Contact Us</h4>
+              <h4>Track Order</h4>
+              <h4>Cancellation Policy</h4>
+            </div>
+            <div class="faq">
+              <h2>FAQ</h2>
+              <h4>Size Guide</h4>
+              <h4>Payment Method</h4>
+              <h4>Delivery Procedure</h4>
+            </div>
+          </div>
+          <div class="social">
+            <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <h5>Designed by Harith Ismail | Copyright 2022 AL-HARITH SPORTS SDN. BHD</h5>
+        </div>
+
+<!-- JavaScript -->
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+        </script>
+</body>
+</html>

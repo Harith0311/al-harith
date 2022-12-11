@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../src/cart.css">
+    <link rel="shortcut icon" href="../img/small-logo.jpg" type="image/x-icon">
+    <title>Shopping cart</title>
+</head>
+<body>
+    <!--Navbar and Header-->
+    <header>
+        <img src="../img/logo-main.jpg" alt="al ikhsan">
+        <div class="search-bar">
+            <h4>Search</h4>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul>
+            <li><a href="cart.html" class="cart"><i class="fa-sharp fa-solid fa-cart-shopping"></i>&nbsp; Cart <span></span></a></li>
+            <li><a href="register.html"><i class="fa-sharp fa-solid fa-user-plus"></i>&nbsp; Register</a></li>
+            <li><a href="login.html"><i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>&nbsp; Login</a></li>
+        </ul>
+        
+    </header>
+    <div class="navbar">
+            <ul class="nama">
+                <li><a href="category.html" class="menu">Adidas</a></li>
+                <li><a href="category.html" class="menu">Nike</a></li>
+                <li><a href="category.html" class="menu">Asics</a></li>
+                <li><a href="category.html" class="menu">Skechers</a></li>
+                <li><a href="category.html" class="menu">Puma</a></li>
+                <li><a href="category.html" class="menu">New Balance</a></li>
+            </ul> 
+    </div>
+
+    <!-- Content -->
+
+    <div class="container">
+        <div class="shop-cart">
+            <h2>Shopping Cart</h2>
+            
+            
+            <div class="cart-head">
+                <div class="product">
+                    <h4>Product</h4> 
+                </div>
+                <div class="price">
+                    <h4>Price</h4> 
+                </div>
+                <div class="qty">
+                    <h4>Qty</h4>
+                </div>
+                <div class="subtotal">
+                    <h4>Subtotal</h4>
+                </div>
+            </div>
+            
+            <div class="line">
+                <hr />
+            </div>
+
+            
+            <!-- <div class="item">
+                
+                <img src="/img/adidas-shoe-1.jpg" alt="">
+                <div class="item-detail">
+                    <p><strong>Adidas Galaxy 6</strong></p>
+                    <p><span>In-Stock</span></p>
+                    <p>Size: 9 UK</p>
+                    <div class="delete">
+                        <a href="#" onclick="deleteProduct('${product.id}')"><i class="fa-solid fa-trash"></i>&nbsp;Delete</a>
+                    </div>
+                </div>
+                <div class="price">
+                    <p>MYR 199</p>
+                </div>
+                <div class="qty">
+                    <select id="qty" onchange="console.log('i am changed!')">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="subtotal">
+                    <p>subtotal value</p>
+                </div>
+            </div>
+
+            <div class="line">
+                <hr />
+            </div> -->
+        </div>
+    
+        
+
+        <div class="details">
+            <h4>Order Summary</h4>
+            <div class="line">
+                <hr />
+            </div>
+             <!-- 
+            <input type="text" placeholder="Enter discount code"><br>
+            <button type="submit">Apply Discount</button>
+
+            <div class="line">
+                <hr />
+            </div>
+
+            <div class="total">
+                <div class="kiri">
+                    <p>Subtotal</p>
+                    <p>Tax</p>
+                    <p>Discount</p>
+                </div>
+                <div class="kanan">
+                    <p>MYR 199.00</p>
+                    <p>MYR 1.19</p>
+                    <p class="discountVal"></p>
+                </div>
+            </div>
+            
+            <div class="total-price">
+                
+                <div class="kiri">
+                    <p><strong>Estimated Total Price</strong></p>
+                    
+                </div>
+                <div class="kanan">
+                    <p><strong>MYR 200.19</strong></p>
+                </div>
+                
+            </div>
+            <div class="checkout">
+                <a href="#"><strong>Checkout Now</strong></a>
+            </div>
+             -->
+        </div>
+    </div>
+
+    <!--Footer-->
+        
+    <div class="footer">
+        <div class="footer-logo">
+          <img src="../img/logo-main.jpg" alt="al harith">
+        </div>
+        <div class="f-content">
+          <div class="about-us">
+            <h2>ABOUT US</h2>
+            <h4>Harith Ismail</h4>
+            <h4>AI200184</h4>
+            <h4>Web Development</h4>
+          </div>
+          <div class="help">
+            <h2>HELP & SUPPORT</h2>
+            <h4>Contact Us</h4>
+            <h4>Track Order</h4>
+            <h4>Cancellation Policy</h4>
+          </div>
+          <div class="faq">
+            <h2>FAQ</h2>
+            <h4>Size Guide</h4>
+            <h4>Payment Method</h4>
+            <h4>Delivery Procedure</h4>
+          </div>
+        </div>
+        <div class="social">
+          <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/i/flow/login" target="blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <h5>Designed by Harith Ismail | Copyright 2022 AL-HARITH SPORTS SDN. BHD</h5>
+      </div>
+
+      <!-- Javascript -->
+      <script src="cart.js"></script>
+      
+</body>
+</html>
